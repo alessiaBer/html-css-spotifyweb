@@ -12,6 +12,7 @@
     --sw-light: #a3a3a3;
     --sw-active: #83c12c;
     --sw-footer: #282828;
+    --sw-banner: #080b12;
 }
 
 body {
@@ -19,21 +20,92 @@ body {
 }
 /* #endregion Common */
 /* #region Utilities */
-
+.d-flex {
+    display: flex;
+}
 /* #endregion Utilities */
 /* #region Debug */
+.debug .sidebar,
+.debug .main_content,
+.debug footer {
+    border: 1px dashed white;
+}
 
+.debug .top {
+    height: calc(100vh - 100px);
+}
+
+.debug .sidebar {
+    width: 50px;
+}
+
+.debug .banner {
+    height: 90px;
+}
+
+.debug #app_main {
+    width: calc(100% - 50px);
+}
+
+.debug #app_bottom {
+    height: 100px;
+}
 /* #endregion Debug */
+
+
 /* #region Top */
 
-/* #endregion Top */
-/* #region Footer */
+/******* TODO .top height 100vh - footer height *******/
 
+/* #region .sidebar */
+.sidebar {
+    background-color: var(--sw-darker);
+}
+/* #endregion .sidebar */
+/******* TODO #app_main width 100% - sidebar ********/
+
+/* #region .banner */
+#app_main .banner {
+    background-color: var(--sw-banner);
+    width: 100%;
+}
+/* #region .banner */
+
+/* #region .main_content */
+#app_main {
+    background-color: var(--sw-dark);
+}
+/* #region .main_content */
+/* #endregion Top */
+
+
+/* #region Footer */
+#app_bottom {
+    background-color: var(--sw-footer);
+}
 /* #endregion Footer */
 
 
 
 
 /***** #region Media *****/
+
+
+/****TODO media for height 350px ****/
+
+/* S */
+@media screen and (min-width: 480px) {
+    
+}
+
+/* MD */
+@media screen and (min-width: 768px) {
+    
+}
+
+/* LG */
+@media screen and (min-width: 1200px) {
+
+} 
 
 /***** #endregion Media *****/
