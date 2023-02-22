@@ -114,30 +114,11 @@ span {
     border: 1px dashed white;
 }
 
-.debug .top {
-    height: calc(100vh - 100px);
-}
-
-.debug .sidebar {
-    width: 50px;
-    height: calc(100vh - 100px);
-    overflow-y: hidden;
-}
-
-.debug .banner {
-    height: 80px;
-}
-
 .debug .btn {
     width: 150px;
     background-color: yellow;
     height: 100%;
 }
-
-.debug #app_main {
-    width: calc(100% - 50px);
-    overflow-y: auto;
-} 
 
 .debug ul li {
     width: 100px;
@@ -146,36 +127,49 @@ span {
     border: 1px solid black;
 }
 
-
-.debug #app_bottom {
-    height: 100px;
-}
 /* #endregion Debug */
 
 
 /* #region Top */
+.top {
+    height: calc(100vh - 100px);
+}
 
-/******* TODO .top height 100vh - footer height *******/
-
-/* #region .sidebar */
+/* .sidebar */
 .sidebar {
     background-color: var(--sw-darker);
+    width: 50px;
+    height: calc(100vh - 100px);
+    overflow-y: hidden;
 }
-/* #endregion .sidebar */
-/******* TODO #app_main width 100% - sidebar ********/
+/* /.sidebar */
+
 #app_main {
     background-color: var(--sw-dark);
+    width: calc(100% - 50px);
 }
-/* #region .banner */
+/* .banner */
+
 #app_main .banner {
     background-color: var(--sw-banner);
     width: 100%;
+    height: 80px;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 900;
 }
-/* #region .banner */
+/* /.banner */
 
 /* #region .main_content */
+
+.main_content {
+    margin-top: 80px;
+    height: calc(100vh - 180px);
+    overflow-y: auto;
+}
 
 nav > ul {
     flex-wrap: wrap;
@@ -209,17 +203,18 @@ span.suggestion {
 .popular .card_img img {
     border-radius: 50%;
 }
-/* #region .main_content */
+/* #endregion .main_content */
 /* #endregion Top */
 
 
 /* #region Footer */
 #app_bottom {
+    height: 100px;
+    width: 100%;
     background-color: var(--sw-footer);
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
     z-index: 10000;
 }
 /* #endregion Footer */
@@ -234,17 +229,19 @@ span.suggestion {
 
 /* S */
 @media screen and (min-width: 481px) {
-    .debug .sidebar {
+
+    .sidebar {
         width: 220px;
     }
 
-    .debug #app_main {
+    #app_main {
         width: calc(100% - 220px);
     }
 }
 
 /* MD */
 @media screen and (min-width: 768px) {
+
     .col_md_1 {
         width: calc(100% / 12);
     }
@@ -297,6 +294,7 @@ span.suggestion {
 
 /* LG */
 @media screen and (min-width: 1200px) {
+
     .col_lg_1 {
         width: calc(100% / 12);
     }
