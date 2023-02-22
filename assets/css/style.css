@@ -102,10 +102,12 @@ body {
 
 .debug .sidebar {
     width: 50px;
+    height: calc(100vh - 100px);
+    overflow-y: hidden;
 }
 
 .debug .banner {
-    height: 50px;
+    height: 80px;
 }
 
 .debug .btn {
@@ -116,6 +118,7 @@ body {
 
 .debug #app_main {
     width: calc(100% - 50px);
+    overflow-y: auto;
 } 
 
 .debug ul li {
@@ -129,6 +132,10 @@ body {
     height: 200px;
     background-color: green;
     border: 1px solid white;
+}
+
+.debug .focus {
+    margin-bottom: 100px;
 }
 
 .debug #app_bottom {
@@ -150,7 +157,6 @@ body {
 #app_main {
     background-color: var(--sw-dark);
 }
-
 /* #region .banner */
 #app_main .banner {
     background-color: var(--sw-banner);
@@ -161,11 +167,6 @@ body {
 /* #region .banner */
 
 /* #region .main_content */
-
-
-.main-content {
-    overflow-y: auto;
-}
 
 nav > ul {
     flex-wrap: wrap;
