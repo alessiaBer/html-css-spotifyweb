@@ -23,6 +23,62 @@ body {
 .d-flex {
     display: flex;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* #region utility col */
+.col_1 {
+    width: calc(100% / 12);
+}
+
+.col_2 {
+    width: calc(100% / 12 * 2);
+}
+
+.col_3 {
+    width: calc(100% / 12 * 3);
+}
+
+.col_4 {
+    width: calc(100% / 12 * 4);
+}
+
+.col_5 {
+    width: calc(100% / 12 * 5);
+}
+
+.col_6 {
+    width: calc(100% / 12 * 6);
+}
+
+.col_7 {
+    width: calc(100% / 12 * 7);
+}
+
+.col_8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col_9 {
+    width: calc(100% / 12 * 9);
+}
+
+.col_10 {
+    width: calc(100% / 12 * 10);
+}
+
+.col_11 {
+    width: calc(100% / 12 * 11);
+}
+
+.col_12 {
+    width: calc(100% / 12 * 12);
+}
+/* #endregion utility col */
+
 /* #endregion Utilities */
 /* #region Debug */
 .debug .sidebar,
@@ -32,7 +88,7 @@ body {
 }
 
 .debug .top {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 70px);
 }
 
 .debug .sidebar {
@@ -40,7 +96,7 @@ body {
 }
 
 .debug .banner {
-    height: 90px;
+    height: 50px;
 }
 
 .debug #app_main {
@@ -48,7 +104,7 @@ body {
 }
 
 .debug #app_bottom {
-    height: 100px;
+    height: 70px;
 }
 /* #endregion Debug */
 
@@ -94,8 +150,10 @@ body {
 /****TODO media for height 350px ****/
 
 /* S */
-@media screen and (min-width: 480px) {
-    
+@media screen and (min-width: 481px) {
+    .debug .sidebar {
+        width: 220px;
+    }
 }
 
 /* MD */
