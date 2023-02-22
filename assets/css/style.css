@@ -1,0 +1,39 @@
+/* #region Common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sw-darker: #000;
+    --sw-lighter: #fff;
+    --sw-dark: #141922;
+    --sw-light: #a3a3a3;
+    --sw-active: #83c12c;
+    --sw-footer: #282828;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+/* #endregion Common */
+/* #region Utilities */
+
+/* #endregion Utilities */
+/* #region Debug */
+
+/* #endregion Debug */
+/* #region Top */
+
+/* #endregion Top */
+/* #region Footer */
+
+/* #endregion Footer */
+
+
+
+
+/***** #region Media *****/
+
+/***** #endregion Media *****/
