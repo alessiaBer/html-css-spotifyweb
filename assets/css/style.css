@@ -27,7 +27,6 @@ body {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -0.5rem;
 }
 
 .list_unstyled {
@@ -36,7 +35,7 @@ body {
 /* #region utility col */
 
 [class^="col_"] {
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .col_1 {
@@ -98,7 +97,7 @@ body {
 }
 
 .debug .top {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 100px);
 }
 
 .debug .sidebar {
@@ -117,7 +116,7 @@ body {
 
 .debug #app_main {
     width: calc(100% - 50px);
-}
+} 
 
 .debug ul li {
     width: 100px;
@@ -133,7 +132,7 @@ body {
 }
 
 .debug #app_bottom {
-    height: 70px;
+    height: 100px;
 }
 /* #endregion Debug */
 
@@ -148,6 +147,9 @@ body {
 }
 /* #endregion .sidebar */
 /******* TODO #app_main width 100% - sidebar ********/
+#app_main {
+    background-color: var(--sw-dark);
+}
 
 /* #region .banner */
 #app_main .banner {
@@ -159,9 +161,7 @@ body {
 /* #region .banner */
 
 /* #region .main_content */
-#app_main {
-    background-color: var(--sw-dark);
-}
+
 
 .main-content {
     overflow-y: auto;
@@ -174,7 +174,10 @@ nav > ul {
 
 .focus {
     color: var(--sw-lighter);
+    padding: 1rem;
+    background-color: var(--sw-dark);
 }
+
 /* #region .main_content */
 /* #endregion Top */
 
@@ -182,6 +185,11 @@ nav > ul {
 /* #region Footer */
 #app_bottom {
     background-color: var(--sw-footer);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
 }
 /* #endregion Footer */
 
@@ -197,6 +205,10 @@ nav > ul {
 @media screen and (min-width: 481px) {
     .debug .sidebar {
         width: 220px;
+    }
+
+    .debug #app_main {
+        width: calc(100% - 220px);
     }
 }
 
