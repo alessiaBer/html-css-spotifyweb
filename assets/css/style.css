@@ -29,6 +29,9 @@ body {
     flex-wrap: wrap;
 }
 
+.list_unstyled {
+    list-style: none;
+}
 /* #region utility col */
 .col_1 {
     width: calc(100% / 12);
@@ -99,8 +102,21 @@ body {
     height: 50px;
 }
 
+.debug .btn {
+    width: 150px;
+    background-color: yellow;
+    height: 100%;
+}
+
 .debug #app_main {
     width: calc(100% - 50px);
+}
+
+.debug ul li {
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    border: 1px solid black;
 }
 
 .debug #app_bottom {
@@ -124,12 +140,19 @@ body {
 #app_main .banner {
     background-color: var(--sw-banner);
     width: 100%;
+    justify-content: flex-end;
+    align-items: center;
 }
 /* #region .banner */
 
 /* #region .main_content */
 #app_main {
     background-color: var(--sw-dark);
+}
+
+nav > ul {
+    flex-wrap: wrap;
+    justify-content: center;
 }
 /* #region .main_content */
 /* #endregion Top */
