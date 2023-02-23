@@ -57,10 +57,15 @@ h3 {
     font-weight: 600;
 }
 
-span {
+h4 {
+    font-size: 0.8rem;
+}
+
+span,
+.playlist li {
     font-size: 0.7rem;
     color: var(--sw-light);
-    font-weight: 500;
+    font-weight: 600;
 }
 /* #region utility col */
 
@@ -143,9 +148,10 @@ span {
 .sidebar {
     background-color: var(--sw-darker);
     width: 50px;
-    height: calc(100vh - 90px);
+    /* height: calc(100vh - 90px); */
     padding: 0.5rem;
-    overflow-y: auto;
+    /* TODO  fix overflow */
+    overflow-y: auto; 
 }
 
 .sidebar_menu {
@@ -170,12 +176,58 @@ span {
 }
 
 .sidebar_menu #search img,
-.sidebar_menu #library img {
+.sidebar_menu #library img,
+.download img {
     filter: brightness(0) saturate(100%) invert(70%) sepia(1%) saturate(475%) hue-rotate(48deg) brightness(94%) contrast(90%);
 }
 
+.playlist h4 {
+    color: var(--sw-lighter);
+    padding-top: 1rem;
+}
+
+.playlist .create {
+    padding: 0.6rem 0 0.3rem 0;
+}
+
+.playlist .create span {
+    font-size: 0.8rem;
+    align-self: center;
+    padding-left: 0.5rem;
+}
+
+.playlist span i {
+    font-size: 2rem;
+}
+
+/* .playlist_items {
+    overflow-y: scroll;
+} */
+.playlist_items li {
+    padding: 0.5rem 0;
+}
+
+.sidebar_bottom .download span,
+.sidebar_bottom .user span {
+    display: none;
+}
+
+.sidebar_bottom .download img {
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.sidebar_bottom .user_img_cont {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background-color: var(--sw-light);
+    border-radius: 50%;
+}
 /* /.sidebar */
 
+/* #app_main */
 #app_main {
     background-color: var(--sw-dark);
     width: calc(100% - 50px);
@@ -293,6 +345,18 @@ span.suggestion {
         font-weight: 600;
     }
 
+    .sidebar_bottom .download span,
+    .sidebar_bottom .user span {
+        display: inline-block;
+    }
+    
+    .sidebar_bottom .user span {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--sw-lighter);
+    }
+
+    /* /.sidebar */
     #app_main {
         width: calc(100% - 230px);
     }
