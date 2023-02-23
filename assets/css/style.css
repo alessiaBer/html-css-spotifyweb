@@ -61,12 +61,30 @@ h4 {
     font-size: 0.8rem;
 }
 
+h5 {
+    color: var(--sw-lighter);
+    font-size: 0.7rem;
+}
+
 span,
 .playlist li {
     font-size: 0.7rem;
     color: var(--sw-light);
     font-weight: 600;
 }
+
+.bar {
+    width: 60%;
+    height: 0.3rem;
+    background-color: var(--sw-light);
+    border-radius: 0.2rem;
+}
+
+.bar i {
+    font-size: 0.5rem;
+    align-self: center;
+}
+
 /* #region utility col */
 
 [class^="col_"] {
@@ -123,17 +141,6 @@ span,
 /* #endregion utility col */
 
 /* #endregion Utilities */
-/* #region Debug */
-
-/* 
-.debug .main_content ul li {
-    width: 120px;
-    height: 30px;
-    background-color: red;
-    border: 1px solid black;
-} */
-
-/* #endregion Debug */
 
 
 /* #region Top */
@@ -325,6 +332,72 @@ span.suggestion {
     bottom: 0;
     left: 0;
     z-index: 10000;
+}
+
+.footer_container {
+    justify-content: space-between;
+}
+
+.footer_left,
+.footer_center,
+.footer_right {
+    flex-basis: calc(100% / 3);
+    align-items: center;
+}
+
+.song {
+    width: 60%;
+}
+
+.song img {
+    width: 40%;
+    padding: 0.3rem;
+    object-fit: contain;
+}
+
+.track_info span {
+    font-size: 0.55rem;
+}
+
+.like_save {
+    width: 40%;
+    flex-wrap: wrap;
+}
+
+.footer_center {
+    flex-grow: 4;
+
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.foot_center_top,
+.foot_center_bot {
+    width: 100%;
+    text-align: center;
+}
+
+.like_save i {
+    color: var(--sw-light);
+    padding: 0.3rem;
+}
+
+.footer_center i,
+.footer_right i {
+    color: var(--sw-lighter);
+}
+
+.bar .sound_selection,
+.bar .time_selection {
+    width: 25%;
+    height: 100%;
+    align-self: center;
+    background-color: white;
+}
+
+.footer_right {
+    justify-content: flex-end;
 }
 /* #endregion Footer */
 

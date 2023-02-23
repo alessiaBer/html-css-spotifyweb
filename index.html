@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body class="debug">
+<body>
     <div class="top d-flex" id="app_top">
 
         <div class="sidebar d-flex">
@@ -257,7 +257,49 @@
     <!-- /#app_top -->
 
     <footer id="app_bottom">
-
+        <div class="footer_container d-flex">
+            <div class="footer_left d-flex">
+                <div class="song d-flex">
+                    <img src="./assets/img/sinister.jpeg" alt="Album">
+                    <div class="track_info">
+                        <h5>Sinister</h5>
+                        <span>Brano</span>
+                        <span>Nome</span>
+                    </div>
+                </div>
+                <div class="like_save d-flex">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+                
+            </div>
+            <div class="footer_center d-flex">
+                <div class="foot_center_top">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </div>
+                <div class="foot_center_bot d-flex">
+                    <span class="current_min">0:25</span>
+                    <div class="bar track_bar d-flex">
+                        <div class="time_selection"></div>
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                <span class="end_min">4:35</span>
+                </div>
+            </div>
+            <div class="footer_right d-flex">
+                <i class="fa-solid fa-list-ul"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="bar sound_bar d-flex">
+                    <div class="sound_selection"></div>
+                    <i class="fa-solid fa-circle"></i>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- /#app_bottom -->
 </body>
