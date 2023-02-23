@@ -38,11 +38,21 @@ a.btn {
     text-decoration: none;
 }
 
+.ban-btn {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    padding: 0.6rem 2.5rem;
+    border: 1px solid white;
+    border-radius: 1.2rem;
+}
+
 h2 {
     font-weight: 600;
 }
 
-h4 {
+h3 {
     font-size: 0.9rem;
     font-weight: 600;
 }
@@ -109,13 +119,12 @@ span {
 
 /* #endregion Utilities */
 /* #region Debug */
-.debug .sidebar,
 .debug nav,
 .debug footer {
     border: 1px dashed white;
 }
 
-.debug ul li {
+.debug .main_content ul li {
     width: 120px;
     height: 30px;
     background-color: red;
@@ -135,8 +144,36 @@ span {
     background-color: var(--sw-darker);
     width: 50px;
     height: calc(100vh - 90px);
-    overflow-y: hidden;
+    padding: 0.5rem;
+    overflow-y: auto;
 }
+
+.sidebar_menu {
+    padding: 0.2rem;
+}
+
+.logo_container {
+    padding-bottom: 0.5rem;
+}
+
+.sidebar .lg_logo,
+.sidebar_menu .list_text {
+    display: none;
+}
+
+.sidebar_menu img {
+    width: 100%;
+}
+
+.sidebar_menu #home span {
+    color: white;
+}
+
+.sidebar_menu #search img,
+.sidebar_menu #library img {
+    filter: brightness(0) saturate(100%) invert(70%) sepia(1%) saturate(475%) hue-rotate(48deg) brightness(94%) contrast(90%);
+}
+
 /* /.sidebar */
 
 #app_main {
@@ -155,16 +192,6 @@ span {
     top: 0;
     right: 0;
     z-index: 900;
-}
-
-.ban-btn {
-    color: white;
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-right: 0.5rem;
-    padding: 0.6rem 2.5rem;
-    border: 1px solid white;
-    border-radius: 1.2rem;
 }
 /* /.banner */
 
@@ -237,6 +264,33 @@ span.suggestion {
 
     .sidebar {
         width: 230px;
+        padding: 1rem;
+    }
+
+    .sm_logo {
+        display: none;
+    }
+
+    .sidebar .lg_logo {
+        display: block;
+        width: 60%;
+        padding: 0.5rem 0 1.5rem 0;
+    }
+
+    .sidebar_menu li {
+        display: flex;
+        padding-bottom: 0.5rem;
+    }
+
+    .sidebar_menu li img {
+        width: 10%;
+    }
+
+    .sidebar .list_text {
+        display: inline-block;
+        align-self: center;
+        padding-left: 0.5rem;
+        font-weight: 600;
     }
 
     #app_main {
