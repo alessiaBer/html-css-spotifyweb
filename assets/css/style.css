@@ -152,9 +152,6 @@ span,
     flex-direction: column;
 }
 
-.sidebar_menu {
-    padding: 0.2rem;
-}
 
 .logo_container {
     padding-bottom: 0.5rem;
@@ -275,7 +272,7 @@ nav > ul li {
     padding: 1rem;
 }
 
-.green-border {
+.green_border_bottom {
     background-color: #83c12c;
     height: 2px;
     width: 40%;
@@ -283,10 +280,9 @@ nav > ul li {
     display: none;
 }
 
-#highlights .green-border {
+#highlights .green_border_bottom {
     display: block;
 }
-
 
 /* /nav */
 .focus {
@@ -345,7 +341,11 @@ span.suggestion {
 
     .sidebar {
         width: 230px;
-        padding: 1rem 1rem 0 1rem;
+        padding: 1rem 1rem 0 0;
+    }
+
+    .logo_container {
+        padding-left: 1rem;
     }
 
     .sm_logo {
@@ -360,7 +360,12 @@ span.suggestion {
 
     .sidebar_menu li {
         display: flex;
-        padding-bottom: 0.5rem;
+        padding: 0.3rem 1rem;
+    }
+
+    .sidebar_menu #home {
+        border-left: 2px solid var(--sw-active);
+        padding-left: 0.8rem;
     }
 
     .sidebar_menu li img {
@@ -409,8 +414,12 @@ span.suggestion {
 
     .playlist {
         display: block;
+        padding-left: 1rem;
     }
 
+    .sidebar_bottom {
+        padding-left: 1rem;
+    }
     /* /.sidebar */
 
     #app_main {
