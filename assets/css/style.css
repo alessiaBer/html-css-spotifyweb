@@ -12,7 +12,7 @@
     --sw-light: #a3a3a3;
     --sw-active: #83c12c;
     --sw-footer: #282828;
-    --sw-banner: rgba(18, 18, 18, 0.406);
+    --sw-banner: rgba(0, 0, 0, 0.308);
 }
 
 body {
@@ -82,6 +82,7 @@ span,
 .bar i {
     font-size: 0.5rem;
     align-self: center;
+    display: none;
 }
 
 /* #region utility col */
@@ -147,7 +148,7 @@ span,
     height: calc(100vh - 90px);
 }
 
-/* .sidebar */
+/* #region .sidebar */
 .sidebar {
     background-color: var(--sw-darker);
     width: 50px;
@@ -236,7 +237,7 @@ span,
     border-radius: 50%;
     margin: 0.6rem 0.3rem;
 }
-/* /.sidebar */
+/* #endregion .sidebar */
 
 /* #app_main */
 #app_main {
@@ -348,6 +349,21 @@ span.suggestion {
     align-items: center;
 }
 
+.footer_center i,
+.footer_right i {
+    color: var(--sw-lighter);
+}
+
+.bar .sound_selection,
+.bar .time_selection {
+    width: 25%;
+    height: 100%;
+    align-self: center;
+    background-color: var(--sw-lighter);
+    border-radius: 0.2rem;
+}
+
+/* #region .footer_left */
 .song {
     width: 70%;
 }
@@ -359,6 +375,7 @@ span.suggestion {
 }
 
 .track_info {
+    display: flex;
     flex-direction: column;
     padding: 0.3rem;
 }
@@ -371,15 +388,16 @@ span.suggestion {
 .like_save {
     width: 30%;
     flex-direction: column;
-    padding: 0 0.5rem;
 }
 
 .like_save i {
     color: var(--sw-light);
-    padding: 0.3rem;
+    padding: 0.2rem 0;
     font-size: 1rem;
 }
+/* #endregion .footer_left */
 
+/* #region .footer_center */
 .footer_center {
     justify-content: center;
     margin: 0 auto;
@@ -387,11 +405,6 @@ span.suggestion {
     flex-grow: 2;
     width: 45%;
     padding: 0 0.5rem;
-}
-
-.footer_center i,
-.footer_right i {
-    color: var(--sw-lighter);
 }
 
 .foot_center_top,
@@ -409,30 +422,28 @@ span.suggestion {
     font-size: 2rem;
 }
 
-.sound_bar {
-    width: 55%;
+.current_min,
+.end_min {
+    padding: 0.3rem;
 }
 
 .track_bar {
     width: 70%;
 }
-
-.bar .sound_selection,
-.bar .time_selection {
-    width: 25%;
-    height: 100%;
-    align-self: center;
-    background-color: var(--sw-lighter);
-    border-radius: 0.2rem;
-}
+/* #endregion .footer_center */
 
 .footer_right {
     justify-content: flex-end;
+    padding-right: 0.3rem;
 }
 
 .foot_right_settings i {
     font-size: 0.8rem;
     padding-right: 0.3rem;
+}
+
+.sound_bar {
+    width: 55%;
 }
 /* #endregion Footer */
 
@@ -537,6 +548,21 @@ span.suggestion {
     #app_main .banner {
         width: calc(100% - 230px);
     }
+
+    .footer_center {
+        width: 30%;
+    }
+
+    .song img {
+        width: 30%;
+    }
+
+    .track_info {
+        width: 70%;
+        display: block;
+    }
+
+    
 }
 
 /* MD */
