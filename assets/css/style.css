@@ -115,13 +115,13 @@ span {
 }
 
 .debug .btn {
-    width: 150px;
+    width: 220px;
     background-color: yellow;
-    height: 100%;
+    height: 40px;
 }
 
 .debug ul li {
-    width: 100px;
+    width: 120px;
     height: 30px;
     background-color: red;
     border: 1px solid black;
@@ -132,14 +132,14 @@ span {
 
 /* #region Top */
 .top {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
 }
 
 /* .sidebar */
 .sidebar {
     background-color: var(--sw-darker);
     width: 50px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
     overflow-y: hidden;
 }
 /* /.sidebar */
@@ -152,8 +152,8 @@ span {
 
 #app_main .banner {
     background-color: var(--sw-banner);
-    width: 100%;
-    height: 80px;
+    width: calc(100% - 50px);
+    height: 90px;
     justify-content: flex-end;
     align-items: center;
     position: fixed;
@@ -166,7 +166,7 @@ span {
 /* #region .main_content */
 
 .main_content {
-    margin-top: 80px;
+    margin-top: 90px;
     height: calc(100vh - 180px);
     overflow-y: auto;
 }
@@ -209,7 +209,7 @@ span.suggestion {
 
 /* #region Footer */
 #app_bottom {
-    height: 100px;
+    height: 90px;
     width: 100%;
     background-color: var(--sw-footer);
     position: fixed;
@@ -228,19 +228,23 @@ span.suggestion {
 /****TODO media for height 350px ****/
 
 /* S */
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 639px) {
 
     .sidebar {
-        width: 220px;
+        width: 230px;
     }
 
     #app_main {
-        width: calc(100% - 220px);
+        width: calc(100% - 230px);
+    }
+
+    #app_main .banner {
+        width: calc(100% - 230px);
     }
 }
 
 /* MD */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 878px) {
 
     .col_md_1 {
         width: calc(100% / 12);
