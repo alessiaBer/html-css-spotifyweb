@@ -616,6 +616,49 @@ span.suggestion {
         width: calc(100% / 12 * 12);
     }
     /* /.col utilities*/
+
+    .footer_left,
+    .footer_right {
+        width: calc(100% / 4);
+    }
+
+    .song img {
+        width: 40%;
+    }
+
+    .track_info {
+        margin: auto;
+    }
+
+    .like_save {
+        flex-direction: row;
+    }
+
+    .like_save i {
+        padding: 0.4rem;
+    }
+
+    .foot_center_top {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .foot_center_bot {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .track_bar {
+        width: 75%;
+    }
+
+    .foot_right_settings {
+        width: 45%;
+    }
+
+    .foot_right_settings i {
+        padding-right: 0.9rem;
+    }
 }
 
 /* LG */
