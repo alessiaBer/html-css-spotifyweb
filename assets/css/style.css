@@ -662,7 +662,7 @@ span.suggestion {
 }
 
 /* LG */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
 
     .col_lg_1 {
         width: calc(100% / 12);
@@ -712,6 +712,27 @@ span.suggestion {
         width: calc(100% / 12 * 12);
     }
     /* /.col utilities */
+
+    .footer_left,
+    .footer_right {
+        width: calc(100% / 6);
+    }
+
+    .footer_center {
+        width: calc(100% / 6 * 2.5);
+    }
+
+    .foot_center_top {
+        width: calc(100% / 4);
+    }
+
+    .foot_center_bot {
+        width: calc(100% / 3 * 1.5);
+    }
+
+    .track_bar {
+        width: 80%;
+    }
 } 
 
 /***** #endregion Media *****/
