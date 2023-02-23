@@ -63,7 +63,7 @@ h4 {
 
 h5 {
     color: var(--sw-lighter);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
 }
 
 span,
@@ -74,7 +74,6 @@ span,
 }
 
 .bar {
-    width: 60%;
     height: 0.3rem;
     background-color: var(--sw-light);
     border-radius: 0.2rem;
@@ -332,55 +331,62 @@ span.suggestion {
     bottom: 0;
     left: 0;
     z-index: 10000;
+    display: flex;
 }
 
 .footer_container {
     justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
 }
 
 .footer_left,
-.footer_center,
 .footer_right {
-    flex-basis: calc(100% / 3);
+    width: calc(100% / 3);
     align-items: center;
 }
 
 .song {
-    width: 60%;
+    width: 70%;
 }
 
 .song img {
-    width: 40%;
+    width: 45%;
     padding: 0.3rem;
     object-fit: contain;
 }
 
+.track_info {
+    flex-direction: column;
+    padding: 0.3rem;
+}
+
 .track_info span {
-    font-size: 0.55rem;
+    font-size: 0.7rem;
+    text-align: left;
 }
 
 .like_save {
-    width: 40%;
-    flex-wrap: wrap;
-}
-
-.footer_center {
-    flex-grow: 4;
-
-    justify-content: center;
-    margin: 0 auto;
+    width: 30%;
     flex-direction: column;
-}
-
-.foot_center_top,
-.foot_center_bot {
-    width: 100%;
-    text-align: center;
+    padding: 0 0.5rem;
 }
 
 .like_save i {
     color: var(--sw-light);
     padding: 0.3rem;
+    font-size: 1rem;
+}
+
+.footer_center {
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    flex-grow: 2;
+    width: 45%;
+    padding: 0 0.5rem;
 }
 
 .footer_center i,
@@ -388,16 +394,45 @@ span.suggestion {
     color: var(--sw-lighter);
 }
 
+.foot_center_top,
+.foot_center_bot {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foot_center_top {
+    padding-bottom: 0.5rem;
+}
+
+.fa-circle-play {
+    font-size: 2rem;
+}
+
+.sound_bar {
+    width: 55%;
+}
+
+.track_bar {
+    width: 70%;
+}
+
 .bar .sound_selection,
 .bar .time_selection {
     width: 25%;
     height: 100%;
     align-self: center;
-    background-color: white;
+    background-color: var(--sw-lighter);
+    border-radius: 0.2rem;
 }
 
 .footer_right {
     justify-content: flex-end;
+}
+
+.foot_right_settings i {
+    font-size: 0.8rem;
+    padding-right: 0.3rem;
 }
 /* #endregion Footer */
 
