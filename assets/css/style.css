@@ -34,6 +34,10 @@ body {
     list-style: none;
 }
 
+a.btn {
+    text-decoration: none;
+}
+
 h2 {
     font-weight: 600;
 }
@@ -53,8 +57,6 @@ span {
 [class^="col_"] {
     padding: 0.5rem;
 }
-
-
 
 .col_1 {
     width: calc(100% / 12);
@@ -109,15 +111,8 @@ span {
 /* #region Debug */
 .debug .sidebar,
 .debug nav,
-.debug footer
- {
+.debug footer {
     border: 1px dashed white;
-}
-
-.debug .btn {
-    width: 220px;
-    background-color: yellow;
-    height: 40px;
 }
 
 .debug ul li {
@@ -160,6 +155,16 @@ span {
     top: 0;
     right: 0;
     z-index: 900;
+}
+
+.ban-btn {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    padding: 0.6rem 2.5rem;
+    border: 1px solid white;
+    border-radius: 1.2rem;
 }
 /* /.banner */
 
