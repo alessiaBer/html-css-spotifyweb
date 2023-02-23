@@ -148,10 +148,11 @@ span,
 .sidebar {
     background-color: var(--sw-darker);
     width: 50px;
-    /* height: calc(100vh - 90px); */
+    height: calc(100vh - 90px);
     padding: 0.5rem;
     /* TODO  fix overflow */
     overflow-y: auto; 
+    flex-direction: column;
 }
 
 .sidebar_menu {
@@ -181,6 +182,10 @@ span,
     filter: brightness(0) saturate(100%) invert(70%) sepia(1%) saturate(475%) hue-rotate(48deg) brightness(94%) contrast(90%);
 }
 
+.playlist {
+    display: none;
+}
+
 .playlist h4 {
     color: var(--sw-lighter);
     padding-top: 1rem;
@@ -207,15 +212,20 @@ span,
     padding: 0.5rem 0;
 }
 
+.sidebar_bottom {
+    flex-direction: column;
+}
+
 .sidebar_bottom .download span,
 .sidebar_bottom .user span {
     display: none;
 }
 
 .sidebar_bottom .download img {
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
     justify-content: center;
+    padding: 0.6rem 0;
 }
 
 .sidebar_bottom .user_img_cont {
@@ -224,6 +234,7 @@ span,
     overflow: hidden;
     background-color: var(--sw-light);
     border-radius: 50%;
+    margin: 0.6rem 0.3rem;
 }
 /* /.sidebar */
 
@@ -316,7 +327,7 @@ span.suggestion {
 
     .sidebar {
         width: 230px;
-        padding: 1rem;
+        padding: 1rem 1rem 0 1rem;
     }
 
     .sm_logo {
@@ -345,18 +356,45 @@ span.suggestion {
         font-weight: 600;
     }
 
+    .sidebar_bottom .download {
+        padding-bottom: 0.7rem;
+        border-bottom: 1px solid var(--sw-light);
+    }
+
+    .sidebar_bottom .download img {
+        width: 7%;
+        margin: 0 0.5rem 0 0;
+        padding: 0;
+    }
+
     .sidebar_bottom .download span,
     .sidebar_bottom .user span {
         display: inline-block;
+    }
+
+    .sidebar_bottom .user_img_cont {
+        width: 10%;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        background-color: var(--sw-light);
+        border-radius: 50%;
+        margin-left: 0;
     }
     
     .sidebar_bottom .user span {
         font-size: 0.85rem;
         font-weight: 600;
         color: var(--sw-lighter);
+        align-self: center;
+        padding-left: 0.5rem;
+    }
+
+    .playlist {
+        display: block;
     }
 
     /* /.sidebar */
+
     #app_main {
         width: calc(100% - 230px);
     }
