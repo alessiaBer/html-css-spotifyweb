@@ -124,17 +124,14 @@ span,
 
 /* #endregion Utilities */
 /* #region Debug */
-.debug nav,
-.debug footer {
-    border: 1px dashed white;
-}
 
+/* 
 .debug .main_content ul li {
     width: 120px;
     height: 30px;
     background-color: red;
     border: 1px solid black;
-}
+} */
 
 /* #endregion Debug */
 
@@ -271,6 +268,27 @@ nav > ul {
     justify-content: center;
 }
 
+nav > ul li {
+    color: var(--sw-light);
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 1rem;
+}
+
+.green-border {
+    background-color: #83c12c;
+    height: 2px;
+    width: 40%;
+    margin: 0.2rem auto;
+    display: none;
+}
+
+#highlights .green-border {
+    display: block;
+}
+
+
+/* /nav */
 .focus {
     color: var(--sw-lighter);
     padding: 2rem;
