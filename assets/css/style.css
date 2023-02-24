@@ -392,6 +392,11 @@ span.suggestion {
     text-align: left;
 }
 
+.track_info span:hover {
+    color: var(--sw-lighter);
+    text-decoration: underline;
+}
+
 .like_save {
     width: 30%;
     flex-direction: column;
