@@ -57,7 +57,8 @@ h5 {
 }
 
 span,
-.playlist li {
+.sidebar span a,
+.playlist li a {
     font-size: 0.7rem;
     color: var(--sw-light);
     font-weight: 600;
@@ -177,10 +178,15 @@ span,
     color: white;
 }
 
-.sidebar_menu #search img,
-.sidebar_menu #library img,
+#search img,
+#library img,
 .download img {
     filter: brightness(0) saturate(100%) invert(70%) sepia(1%) saturate(475%) hue-rotate(48deg) brightness(94%) contrast(90%);
+}
+
+/****** TODO effect in icon ******/
+.sidebar_menu li a:hover #search img {
+    filter: none;
 }
 
 .playlist {
@@ -318,9 +324,27 @@ nav > ul li {
     text-align: center;
     padding: 1.5rem 0;
 }
+.card_img {
+    position: relative;
+}
 
-.card img {
+.card_img img {
     width: 100%;
+}
+
+.card_img i {
+    display: none;
+    font-size: 3.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*****TODO****/
+
+.card_img:hover .card_img i {
+    display: block;
 }
 
 .card_text {
@@ -430,8 +454,17 @@ span.suggestion {
     padding-bottom: 0.5rem;
 }
 
+.foot_center_top i {
+    padding: 0.2rem;
+}
+
 .fa-circle-play {
     font-size: 2rem;
+}
+
+.fa-circle-play:hover {
+    font-size: 2.2rem;
+    padding: 0.1rem;
 }
 
 .current_min,
@@ -466,6 +499,10 @@ span.suggestion {
 .footer_right {
     justify-content: flex-end;
     padding-right: 0.3rem;
+}
+
+.foot_right_settings {
+    justify-content: space-between;
 }
 
 .foot_right_settings i {
