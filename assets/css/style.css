@@ -34,7 +34,7 @@ body {
     list-style: none;
 }
 
-a.btn {
+a {
     text-decoration: none;
 }
 
@@ -145,6 +145,7 @@ span,
     height: 100%;
     padding: 0.5rem;
     /* TODO  fix overflow */ 
+    overflow-y: auto;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -161,6 +162,15 @@ span,
 
 .sidebar_menu img {
     width: 100%;
+}
+
+.sidebar_menu .list_text:hover,
+.playlist span:hover,
+.playlist_items li:hover,
+.sidebar_bottom span:hover,
+.main_content ul li:hover,
+.like_save i:hover {
+    color: var(--sw-lighter);
 }
 
 .sidebar_menu #home span {
