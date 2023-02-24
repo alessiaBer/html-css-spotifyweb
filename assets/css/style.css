@@ -355,15 +355,6 @@ span.suggestion {
     color: var(--sw-lighter);
 }
 
-.bar .sound_selection,
-.bar .time_selection {
-    width: 25%;
-    height: 100%;
-    align-self: center;
-    background-color: var(--sw-lighter);
-    border-radius: 0.2rem;
-}
-
 /* #region .footer_left */
 .song {
     width: 70%;
@@ -430,6 +421,25 @@ span.suggestion {
 
 .track_bar {
     width: 70%;
+}
+
+.bar .sound_selection,
+.bar .time_selection {
+    width: 25%;
+    height: 100%;
+    align-self: center;
+    background-color: var(--sw-lighter);
+    border-radius: 0.2rem;
+}
+
+.track_bar:hover .time_selection,
+.sound_bar:hover .sound_selection {
+    background-color: var(--sw-active);
+}
+
+.track_bar:hover .fa-solid,
+.sound_bar:hover .fa-solid {
+    display: inline-block;
 }
 /* #endregion .footer_center */
 
