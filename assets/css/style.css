@@ -564,6 +564,7 @@ span.suggestion {
 
 
 /****TODO media for height 350px ****/
+
 /* XS */
 @media screen and (min-width: 552px) {
     .col_sm_1 {
@@ -917,5 +918,20 @@ span.suggestion {
         width: 80%;
     }
 } 
+
+@media screen and (max-height: 430px) {
+    .playlist {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 350px) {
+    .sidebar {
+        justify-content: flex-start;
+    }
+    .sidebar_bottom {
+        display: none;
+    }
+}
 
 /***** #endregion Media *****/
