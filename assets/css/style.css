@@ -137,16 +137,6 @@ span,
     justify-content: space-between;
 }
 
-.playlist_items {
-    overflow-y: auto;
-}
-.sidebar_bottom {
-    flex-direction: column;
-    height: 220px;
-    justify-content: flex-end;
-    background-color: var(--sw-darker);
-}
-
 .logo_container {
     padding-bottom: 0.5rem;
 }
@@ -156,9 +146,35 @@ span,
     display: none;
 }
 
+.sidebar_top {
+    height: calc(80% - 90px);
+}
+
+.sidebar_menu {
+    height: 90px;
+}
+
 .sidebar_menu img {
     width: 100%;
 }
+
+.playlist {
+    height: calc(100% - 90px);
+}
+
+.playlist_items {
+    overflow-y: auto;
+    max-height: calc(100% - 80px);
+}
+
+.sidebar_bottom {
+    flex-direction: column;
+    height: 20%;
+    justify-content: flex-end;
+    background-color: var(--sw-darker);
+}
+
+
 
 .sidebar_menu .list_text:hover,
 .playlist_items li a:hover,
