@@ -38,16 +38,6 @@ a.btn {
     text-decoration: none;
 }
 
-.ban-btn {
-    color: white;
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-right: 0.5rem;
-    padding: 0.6rem 2.5rem;
-    border: 1px solid white;
-    border-radius: 1.2rem;
-}
-
 h2 {
     font-weight: 600;
 }
@@ -154,8 +144,7 @@ span,
     width: 50px;
     height: 100%;
     padding: 0.5rem;
-    /* TODO  fix overflow */
-    overflow-y: auto; 
+    /* TODO  fix overflow */ 
     flex-direction: column;
     justify-content: space-between;
 }
@@ -257,6 +246,22 @@ span,
     top: 0;
     right: 0;
     z-index: 900;
+}
+
+.ban-btn {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    padding: 0.6rem 2.5rem;
+    border: 1px solid white;
+    border-radius: 1.2rem;
+}
+
+.ban-btn:hover {
+    font-size: 0.9rem;
+    padding: 0.7rem 3rem;
+    margin-right: 0.3rem;
 }
 /* /.banner */
 
