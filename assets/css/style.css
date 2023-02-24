@@ -152,11 +152,12 @@ span,
 .sidebar {
     background-color: var(--sw-darker);
     width: 50px;
-    height: calc(100vh - 90px);
+    height: 100%;
     padding: 0.5rem;
     /* TODO  fix overflow */
     overflow-y: auto; 
     flex-direction: column;
+    justify-content: space-between;
 }
 
 
