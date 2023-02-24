@@ -64,18 +64,6 @@ span,
     font-weight: 600;
 }
 
-.bar {
-    height: 0.3rem;
-    background-color: var(--sw-light);
-    border-radius: 0.2rem;
-}
-
-.bar i {
-    font-size: 0.5rem;
-    align-self: center;
-    display: none;
-}
-
 /* #region utility col */
 
 [class^="col_"] {
@@ -168,8 +156,7 @@ span,
 .sidebar_menu .list_text:hover,
 .playlist_items li a:hover,
 .sidebar_bottom span:hover,
-.main_content ul li:hover,
-.like_save i:hover {
+.main_content ul li a:hover {
     color: var(--sw-lighter);
 }
 
@@ -184,7 +171,7 @@ span,
 }
 
 /****** TODO effect in icon ******/
-.sidebar_menu li a:hover #search img {
+#library img:hover {
     filter: none;
 }
 
@@ -300,10 +287,13 @@ nav > ul {
     justify-content: center;
 }
 
-nav > ul li {
+nav > ul li a {
     color: var(--sw-light);
     font-weight: 600;
     font-size: 0.8rem;
+}
+
+nav > ul li {
     padding: 1rem;
 }
 
@@ -445,6 +435,11 @@ span.suggestion {
     padding: 0.2rem 0;
     font-size: 1rem;
 }
+
+.like_save i:hover {
+    color: var(--sw-lighter);
+    cursor: pointer;
+}
 /* #endregion .footer_left */
 
 /* #region .footer_center */
@@ -499,14 +494,28 @@ span.suggestion {
     border-radius: 0.2rem;
 }
 
+.bar {
+    height: 0.3rem;
+    background-color: var(--sw-light);
+    border-radius: 0.2rem;
+}
+
+.bar i {
+    font-size: 0.7rem;
+    align-self: center;
+    display: none;
+}
+
 .track_bar:hover .time_selection,
 .sound_bar:hover .sound_selection {
     background-color: var(--sw-active);
+    cursor: pointer;
 }
 
 .track_bar:hover .fa-solid,
 .sound_bar:hover .fa-solid {
     display: inline-block;
+    cursor: pointer;
 }
 /* #endregion .footer_center */
 
