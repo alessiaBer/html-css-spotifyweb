@@ -716,6 +716,7 @@ span.suggestion {
     .footer_left,
     .footer_right {
         width: calc(100% / 6);
+        max-width: 250px;
     }
 
     .footer_center {
@@ -724,10 +725,12 @@ span.suggestion {
 
     .foot_center_top {
         width: calc(100% / 4);
+        max-width: 250px;
     }
 
     .foot_center_bot {
         width: calc(100% / 3 * 1.5);
+        max-width: 500px;
     }
 
     .track_bar {
